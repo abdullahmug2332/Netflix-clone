@@ -421,6 +421,11 @@ nav {
         height: 230px;
     }
 }
+@media screen and (max-width:950px)  {
+    .mrtj{
+        width: 90%;
+    }
+}
 
 
 /* section4 */
