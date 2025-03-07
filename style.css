@@ -489,6 +489,11 @@ nav {
         font-size: 25px;
     }
 }
+@media screen and (max-width:950px)  {
+    .subdiv{
+        width: 90%;
+    }
+}
 
 /* section5 */
 /* section5 */
@@ -567,6 +572,11 @@ nav {
         font-size:17px ;
         width: 160px;
         height: 50px;
+    }
+}
+@media screen and (max-width:950px)  {
+    .subsec5{
+        width: 90%;
     }
 }
 
@@ -656,4 +666,9 @@ nav {
         gap: 20px;
 
 }
+}
+@media screen and (max-width:950px)  {
+    .subfooter{
+        width: 90%;
+    }
 }
