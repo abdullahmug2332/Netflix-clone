@@ -345,6 +345,9 @@ nav {
         bottom: 30px;
         height: 45vh;
     }
+    .trending{
+        width: 90%;
+    }
 }
 
 
