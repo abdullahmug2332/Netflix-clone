@@ -1,16 +1,5 @@
-// const left_arrow = document.querySelector(".leftarrow");
-// const right_arrow = document.querySelector(".rightarrow");
-
-// left_arrow.addEventListener("click", () => {
-//     document.querySelector('.movieslider').style.transform = `translateX(${-50}%)`;
-// });
-// right_arrow.addEventListener("click", () => {
-//     document.querySelector('.movieslider').style.transform = `translateX(${+50}%)`;
-// });
-
-
-const leftArrow = document.querySelector(".leftarrow");
-const rightArrow = document.querySelector(".rightarrow");
+const leftArrow = document.querySelector(".rightarrow");
+const rightArrow = document.querySelector(".leftarrow");
 const movieSlider = document.querySelector(".movieslider");
 
 leftArrow.style.display="none";

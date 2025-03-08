@@ -1,29 +1,26 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    width: 100vw;
+body{
+    width: 100%;
     overflow-x: hidden;
     background-color: #000000;
 }
-
-.main {
+.main{
     background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8500) 8.000%, rgba(0, 0, 0, 0.8465) 15.67%, rgba(0, 0, 0, 0.8361) 23.33%, rgba(0, 0, 0, 0.8187) 31.00%, rgba(0, 0, 0, 0.7944) 38.67%, rgba(0, 0, 0, 0.7632) 46.33%, rgba(0, 0, 0, 0.7250) 54.00%, rgba(0, 0, 0, 0.6868) 61.67%, rgba(0, 0, 0, 0.6556) 69.33%, rgba(0, 0, 0, 0.6312) 77.00%, rgba(0, 0, 0, 0.6139) 84.67%, rgba(0, 0, 0, 0.6035) 92.33%, rgba(0, 0, 0, 0.6000) 100.0%), url('https://assets.nflxext.com/ffe/siteui/vlv3/0cf2c109-3af1-4a9d-87d7-aecfac5fe881/web/PK-en-20250217-TRIFECTA-perspective_4f4f2245-40fe-4984-ab87-fb1347d77bac_large.jpg');
-
-    /* background-position: center; */
     background-repeat: no-repeat;
     height: 100vh;
+    min-height: 640px;
+    max-height: 900px;
     width: 100%;
+
 }
 
 .netflixicon {
     width: 160px;
     color: #E50914;
-    
-
 }
 
 .netflixicon path {
@@ -52,7 +49,8 @@ nav {
 
 .hero {
     color: white;
-    height: 80%;
+    min-height: 80vh;
+    max-height: 500px;
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -92,6 +90,7 @@ nav {
 }
 
 .herosearch>:nth-child(1) {
+    max-width: 400px; 
     background-color: #121312;
     padding: 15px 124px 15px 8px;
     border: 1px solid grey;
@@ -116,7 +115,7 @@ nav {
 /* Tablet */
 @media screen and (max-width: 1070px) and (min-width: 620px) {
     .main {
-        height: 50vh;
+        height: 100vh;
 
     }
 
@@ -203,11 +202,6 @@ nav {
         margin-top: 10px;
     }
 }
-
-/* section2 */
-/* section2 */
-/* section2 */
-/* section2 */
 .upperline{
     position: relative;
 }
@@ -217,7 +211,7 @@ nav {
     border-top: 4px solid red ;
     width: 100%;
     height: 100px;
-    position: absolute;
+    position: relative;
     top:-90px ;
     border-top-left-radius: 90%;
     border-top-right-radius: 90%;
@@ -230,7 +224,7 @@ nav {
         border-top: 4px solid red ;
         width: 100%;
         height: 70px;
-        position: absolute;
+        position: relative;
         top:-69px ;
         border-top-left-radius: 90%;
         border-top-right-radius: 90%;
@@ -243,19 +237,23 @@ nav {
         border-top: 4px solid red ;
         width: 100%;
         height: 50px;
-        position: absolute;
-        top:-49px ;
+        position: relative;
+        top: -49px;
         border-top-left-radius: 90%;
         border-top-right-radius: 90%;
     }
 }
 
+
+/* section2 */
+
 .section2{
     width: 100%;
+    max-height: 350px;
     height: 70vh;
     padding-top: 0px;
     position: relative;
-    bottom: 60px;
+    top: -60px;
     z-index: 100;
 }
 .trending{
@@ -263,7 +261,6 @@ nav {
     height: 100%;
     margin: auto;
     z-index: 1;
-    margin-top: 50px;
 }
 .trending>:nth-child(1){
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
@@ -274,13 +271,10 @@ nav {
 .upperslider{
     width: 100%;
     height: 75%;
-    /* overflow-x: hidden; */
-    /* margin: auto; */
     margin-top: 30px;
     display: flex;
     align-items: center;
     gap: 30px;
-    /* transition: all 2 ease; */
 
 }
 .anotherslider{
@@ -348,13 +342,28 @@ nav {
     .trending{
         width: 90%;
     }
+    .card{
+        width: 150px;
+        height: 200px;
+        background-color: #922e2e;
+        border-radius: 12px;
+        background-color: #E50914;
+        position: relative;
+    }
+    .leftarrow{
+        padding: 40px 0px;
+        border-radius: 10px;
+        font-size :22px ;
+    }
+    .rightarrow{
+        padding: 40px 0px;
+        border-radius: 10px;
+        font-size :22px ;
+
+    }
 }
 
 
-
-/* section3 */
-/* section3 */
-/* section3 */
 /* section3 */
 
 
@@ -427,10 +436,6 @@ nav {
     }
 }
 
-
-/* section4 */
-/* section4 */
-/* section4 */
 /* section4 */
 
 .section4{
